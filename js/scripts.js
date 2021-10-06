@@ -11,10 +11,11 @@ function sendMail(params) {
     emailjs.send('service_u3c243x', 'template_63a3xvg', tempParams)
         .then(function (res) {
             console.log("sucess", res.status);
-            alert('Muchas gracias!! nos contactaremos pronto');
+
 
 
 
         })
-    
+    alert('Muchas gracias!! nos contactaremos pronto');
+
 }
