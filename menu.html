@@ -76,6 +76,33 @@
                                 Reservar
                             </a>
                         </div>
+                        <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <img src="images/carrito.png" class="nav-link dropdown-toggle img-fluid"
+                                        height="70px" width="70px" href="#" id="dropdown01" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"></img>
+                                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                        <table id="lista-carrito" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+
+                                        <a href="#" id="vaciar-carrito" class="btn btn-dark btn-block">Vaciar
+                                            Carrito</a>
+                                        <a href="#" id="procesar-pedido" class="btn btn-dark btn-block">terminar
+                                            compra</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -104,11 +131,11 @@
                     </div>
                 </div>
 
-                <div class="row menu-container">
+                <div class="row menu-container" id="lista-productos">
                     <!--Bandeja paisa-->
                     <div class="col-lg-6 menu-item filter-starters">
-                        <div class="menu-content">
-                            <a href="#">Bandeja Paisa</a><span>$33.000</span>
+                        <div class="menu-content product-description" data-name="Bandeja Paisa" data-price="20000">
+                            <h4><a href="#">Bandeja Paisa</a></h4><span>$33.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/bandeja_paisa.jpg" width="150" height="150" />
@@ -118,8 +145,14 @@
                         </div>
                         <button type="button" class="custom_dark-btn" data-toggle="modal"
                             data-target="#exampleModalCenter">Ver plato</button>
-                        <button type="button" class="btn btn-outline-dark" style="width: 200px; padding: 9px;">Agregar
-                            al carrito</button>
+                        <div>
+                            <label for="qty-1">Cantidad</label>
+                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="1">Agregar
+                                al carrito</button>
+                        </div>
 
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -139,8 +172,8 @@
                                             aguacate y arepa.</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-dark"
-                                            style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                        <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                            style="width: 200px; padding: 9px;" data-id="1">Agregar al carrito</button>
                                         <button type="button" class="custom_dark-btn"
                                             data-dismiss="modal">Close</button>
                                     </div>
@@ -152,7 +185,7 @@
                     <!--Mojarra frita-->
                     <div class="col-lg-6 menu-item filter-specialty">
                         <div class="menu-content">
-                            <a href="#">Mojarra frita</a><span>$20.000</span>
+                            <h4><a href="#">Mojarra frita</a></h4><span>$20.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/mojarra.jpg" width="150" height="150" />
@@ -162,8 +195,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter1">Ver plato</button>
-                            <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px; " data-id="2">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -184,8 +217,8 @@
                                         cerveza o vino, o bien como entrante o primer plato.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                        style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px; " data-id="2">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -194,7 +227,7 @@
                     <hr class="featurette-divider ">
                     <div class="col-lg-6 menu-item filter-starters">
                         <div class="menu-content">
-                            <a href="#">Pepitoria</a><span>$60.000</span>
+                            <h4><a href="#">Pepitoria</a></h4><span>$60.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/pepitoria.jpg" width="150" height="150" />
@@ -206,7 +239,8 @@
 
                         <button type="button" class="custom_dark-btn" data-toggle="modal"
                             data-target="#exampleModalCenter2">Ver plato</button>
-                        <button type="button" class="btn btn-outline-dark" style="width: 200px; padding: 9px;">Agregar
+                        <button type="button" class="btn btn-outline-dark agregar-carrito"
+                            style="width: 200px; padding: 9px;" data-id="3">Agregar
                             al carrito</button>
 
                         <!-- Modal -->
@@ -227,8 +261,8 @@
                                             lugares han convertido la receta a una sopa.</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                        <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                            style="width: 200px; padding: 9px; " data-id="3">Agregar al carrito</button>
                                         <button type="button" class="custom_dark-btn"
                                             data-dismiss="modal">Close</button>
                                     </div>
@@ -239,7 +273,7 @@
                     <!--Mute-->
                     <div class="col-lg-6 menu-item filter-specialty">
                         <div class="menu-content">
-                            <a href="#">Mute</a><span>$28.000</span>
+                            <h4><a href="#">Mute</a></h4><span>$28.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/mute.gif" width="150" height="150" />
@@ -249,8 +283,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter3">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="4">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -272,8 +306,8 @@
                                         obtener un mejor sabor.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="4">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -284,7 +318,7 @@
 
                     <div class="col-lg-6 menu-item filter-starters">
                         <div class="menu-content">
-                            <a href="#">Sancocho</a><span>$80.000</span>
+                            <h4><a href="#">Sancocho</a></h4><span>$80.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/SANCOCHO-VALLUNO.jpg" width="150" height="150" />
@@ -294,8 +328,8 @@
                                 localidades del país </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter4">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="5">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -318,8 +352,8 @@
                                         verduras (cebolla, ajo, cilantro, apio, ají dulce, entre otros).</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="5">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -329,7 +363,7 @@
                     <!--Ajiaco-->
                     <div class="col-lg-6 menu-item filter-specialty">
                         <div class="menu-content">
-                            <a href="#">Ajiaco con pollo</a><span>$90.000</span>
+                            <h4><a href="#">Ajiaco con pollo</a></h4><span>$90.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/AJIACO.jpg " width="150" height="150" />
@@ -340,8 +374,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter5">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="6">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -360,8 +394,8 @@
                                         de maíz y opcionalmente alcaparras.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px; " data-id="6">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -370,7 +404,7 @@
                     <!--Lechona-->
                     <div class="col-lg-6 menu-item filter-specialty">
                         <div class="menu-content">
-                            <a href="#">Lechona</a><span>$90.000</span>
+                            <h4><a href="#">Lechona</a></h4><span>$90.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/LECHONA.jpg " width="150" height="150" />
@@ -382,8 +416,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter6">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="7">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -407,8 +441,8 @@
                                         carne picada y adobada.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="7">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -418,7 +452,7 @@
                     <!--Oreada-->
                     <div class="col-lg-6 menu-item filter-salads">
                         <div class="menu-content">
-                            <a href="#">Carne Oreada</a><span>$90.000</span>
+                            <h4><a href="#">Carne Oreada</a></h4><span>$90.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/carne.jpg " width="150" height="150" />
@@ -429,8 +463,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter8">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="8">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -450,8 +484,8 @@
                                         con yuca y ají,</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="8">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -460,7 +494,7 @@
                     <!--Sopa de pollo-->
                     <div class="col-lg-6 menu-item filter-specialty">
                         <div class="menu-content">
-                            <a href="#">Sopa de pollo</a><span>$40.000</span>
+                            <h4><a href="#">Sopa de pollo</a></h4><span>$40.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/sopa_pollo.jpg " width="150" height="150" />
@@ -472,8 +506,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter9">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="9">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -495,8 +529,8 @@
                                         rinitis.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="9">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -506,7 +540,7 @@
                     <!--Cazuela de mariscos-->
                     <div class="col-lg-6 menu-item filter-salads">
                         <div class="menu-content">
-                            <a href="#">Cazuela de mariscos</a><span>$150.000</span>
+                            <h4><a href="#">Cazuela de mariscos</a></h4><span>$150.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/cazuela.jpg " width="150" height="150" />
@@ -517,8 +551,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter12">Ver plato</button>
-                                <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="10">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -539,8 +573,8 @@
                                         de gratinar), todo cocinado en leche de coco.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-dark"
-                                style="width: 200px; padding: 9px;">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="10">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -549,7 +583,7 @@
                     <!--Arepa rellena-->
                     <div class="col-lg-6 menu-item filter-specialty">
                         <div class="menu-content">
-                            <a href="#">Arepa rellena</a><span>$20.000</span>
+                            <h4><a href="#">Arepa rellena</a></h4><span>$20.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/arepa_rellena.jpg " width="150" height="150" />
@@ -561,6 +595,9 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter10">Ver plato</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="11">Agregar al carrito</button>
+
                         </div>
                     </div>
                     <!-- Modal -->
@@ -582,6 +619,8 @@
                                         gastronómica nacional».</p>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="11">Agregar al carrito</button>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -591,7 +630,7 @@
                     <!--Coctel-->
                     <div class="col-lg-6 menu-item filter-salads">
                         <div class="menu-content">
-                            <a href="#">Coctel de camarones</a><span>$50.000</span>
+                            <h4><a href="#">Coctel de camarones</a></h4><span>$50.000</span>
                         </div>
                         <div class="menu-image">
                             <img src="images/camarones.jpg " width="150" height="150" />
@@ -602,6 +641,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter11">Ver plato</button>
+                            <button type="button" class="btn btn-outline-dark agregar-carrito"
+                                style="width: 200px; padding: 9px;" data-id="12">Agregar al carrito</button>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -621,6 +662,8 @@
                                         salsa y una variedad de verduras, como lechuga, aguacate o tomate.</p>
                                 </div>
                                 <div class="modal-footer">
+                                    <a type="button" class="btn btn-outline-dark agregar-carrito"
+                                        style="width: 200px; padding: 9px;" data-id="12">Agregar al carrito</a>
                                     <button type="button" class="custom_dark-btn" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -780,6 +823,8 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/carrito.js"></script>
+        <script type="text/javascript" src="js/pedido.js"></script>
 
         <script>
 
