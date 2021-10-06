@@ -27,6 +27,14 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_N1QLAPwmzBi4e4Kiszev7");
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -54,7 +62,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="Nosotros.html"> Nosotros</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="menu.html">Menú</a>
                 </li>
                 <li class="nav-item">
@@ -89,10 +97,10 @@
       <h2 class="font-weight-bold">
         Contáctenos
       </h2>
-     
+
       <div class="row">
         <div class="col-md-8 mr-auto">
-            
+
           <form action="">
             <div class="contact_form-container">
               <div>
@@ -100,7 +108,8 @@
                   <input type="text" id="toName" minlength="10" maxlength="30" placeholder="Nombre completo" required>
                 </div>
                 <div>
-                  <input type="text" id="toNumber" maxlength="10" required pattern="[0-9]" placeholder="Número de contacto">
+                  <input type="text" id="toNumber" maxlength="10" required pattern="[0-9]"
+                    placeholder="Número de contacto">
                 </div>
                 <div>
                   <input type="email" id="toEmail" required placeholder="Correo electronico">
@@ -112,28 +121,30 @@
                 <br>
                 <br>
                 <div>
-                    <label for="servicios">Servicios:</label>
-                    <select name="servicios" id="toService">
-                        <option value="value1">Celebracion de cumpleaños</option>
-                        <option value="value2">Aniversarios</option>
-                         <option value="value2">Fiestas Infantiles</option>
-                          <option value="value2">Declaraciones o propuestas</option>
-                           <option value="value2">Despedidas</option>
-                        <option value="value3">Cena con amigos</option>
-                    </select>
-                </div> 
+                  <label for="servicios">Servicios:</label>
+                  <select name="servicios" id="toService">
+                    <option value="value1">Celebracion de cumpleaños</option>
+                    <option value="value2">Aniversarios</option>
+                    <option value="value2">Fiestas Infantiles</option>
+                    <option value="value2">Declaraciones o propuestas</option>
+                    <option value="value2">Despedidas</option>
+                    <option value="value3">Cena con amigos</option>
+                  </select>
+                </div>
                 <br>
                 <br>
-                <textarea name="coments" id="toComent" rows="10" cols="50" placeholder="Comentarios y/o solicitudes especiales" required></textarea>
+                <textarea name="coments" id="toComent" rows="10" cols="50"
+                  placeholder="Comentarios y/o solicitudes especiales" required></textarea>
                 <br>
                 <br>
                 <div class="checkbox">
-                    <label for="check"><input type="checkbox" id="data" required /> <span>Acepto la politica de tratamiento de datos personales</span></label>
+                  <label for="check"><input type="checkbox" id="data" required /> <span>Acepto la politica de
+                      tratamiento de datos personales</span></label>
                 </div>
-                
-               
+
+
                 <div class="mt-5">
-                  <button type="submit">
+                  <button type="submit" onclick='sendMail()'>
                     Enviar
                   </button>
                 </div>
@@ -143,11 +154,11 @@
 
           </form>
         </div>
-    
+
       </div>
     </div>
   </section>
- 
+
   <!-- end contact section -->
 
   <!--Footer-->
@@ -187,7 +198,7 @@
         </div>
         <div class="col-md-3" id="menu-footer">
           <h5>
-             <a href="service.html">Servicios</a>
+            <a href="service.html">Servicios</a>
           </h5>
           <ul>
             <li>
@@ -219,28 +230,28 @@
           </h5>
           <ul>
             <li>
-            Dirección:Calle 35 E 25 
+              Dirección:Calle 35 E 25
             </li>
             <li>
               Horario de atención: 8:00 a.m - 10:00 p.m.
             </li>
             <li>
-              Reservas: 314578920 
+              Reservas: 314578920
             </li>
             <li>
               Email: dgusto@gmail.com
             </li>
             <li>
-              
+
             </li>
             <li>
-              
+
             </li>
             <li>
-              
+
             </li>
             <li>
-              
+
             </li>
           </ul>
         </div>
@@ -265,7 +276,7 @@
               </a>
             </div>
             <div>
-                <a href="mapa.html">Mapa del sitio</a>
+              <a href="mapa.html">Mapa del sitio</a>
             </div>
           </div>
           <div class="subscribe_container">
@@ -287,7 +298,7 @@
   </section>
 
   <!--Acordion-->
- 
+
 
 
 
@@ -298,13 +309,11 @@
     </p>
   </section>
 
- 
+
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script src="js/formulario.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script>
     // This example adds a marker to indicate the position of Bondi Beach in Sydney,
