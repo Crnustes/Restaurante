@@ -134,7 +134,7 @@
                 <div class="row menu-container" id="lista-productos">
                     <!--Bandeja paisa-->
                     <div class="col-lg-6 menu-item filter-starters">
-                        <div class="menu-content product-description" data-name="Bandeja Paisa" data-price="20000">
+                        <div class="menu-content product-description" name="Bandeja Paisa" data-price="20000">
                             <h4><a href="#">Bandeja Paisa</a></h4><span>$33.000</span>
                         </div>
                         <div class="menu-image">
@@ -172,8 +172,7 @@
                                             aguacate y arepa.</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-dark agregar-carrito"
-                                            style="width: 200px; padding: 9px;" data-id="1">Agregar al carrito</button>
+
                                         <button type="button" class="custom_dark-btn"
                                             data-dismiss="modal">Close</button>
                                     </div>
@@ -195,6 +194,8 @@
                             </p>
                             <button type="button" class="custom_dark-btn" data-toggle="modal"
                                 data-target="#exampleModalCenter1">Ver plato</button>
+                            <h2 class="demoHeaders">Spinner</h2>
+                            <input id="spinner">
                             <button type="button" class="btn btn-outline-dark agregar-carrito"
                                 style="width: 200px; padding: 9px; " data-id="2">Agregar al carrito</button>
                         </div>
@@ -826,33 +827,6 @@
         <script type="text/javascript" src="js/carrito.js"></script>
         <script type="text/javascript" src="js/pedido.js"></script>
 
-        <script>
-
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 11,
-                    center: {
-                        lat: 40.645037,
-                        lng: -73.880224
-                    },
-                });
-
-                var image = 'images/maps-and-flags.png';
-                var beachMarker = new google.maps.Marker({
-                    position: {
-                        lat: 40.645037,
-                        lng: -73.880224
-                    },
-                    map: map,
-                    icon: image
-                });
-            }
-        </script>
-        <!-- google map js -->
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-            </script>
-        <!-- end google map js -->
 
 </body>
 

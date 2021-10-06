@@ -27,26 +27,6 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style2.css">
-
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/carrito.js"></script>
-    <script type="text/javascript" src="js/pedido.js"></script>
-    <script>
-        $(document).ready(function(){
-            let nombre = localStorage.getItem("nombre");
-            let precio = localStorage.getItem("precio");
-            let cantidad = localStorage.getItem("cantidad");
-
-            $("#datos").append("<td>" + nombre + "</td>")
-            $("#datos").append("<td>" + precio + "</td>")
-            $("#datos").append("<td>" + cantidad + "</td>")
-
-        });
-    </script>
 
 </head>
 
@@ -106,15 +86,13 @@
                                         <table id="lista-carrito" class="table">
                                             <thead>
                                                 <tr>
+                                                    <th>Imagen</th>
                                                     <th>Nombre</th>
-                                                    <th>Cantidad</th>
                                                     <th>Precio</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr id="datos"></tr>
-                                            </tbody>
+                                            <tbody></tbody>
                                         </table>
 
                                         <a href="#" id="vaciar-carrito" class="btn btn-dark btn-block">Vaciar
@@ -129,49 +107,19 @@
                 </nav>
             </div>
         </header>
-      
-        <div id="site">
-           
-            <div id="content">
-                <h1>Carrito de compras</h1>
-                <form id="shopping-cart" action="cart.html" method="post">
-                    <table class="shopping-cart">
-                      <thead>
-                        <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col" colspan="2">Precio</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tbody>
-                            <tr id="datos"></tr>
-                        </tbody>
-                      </tbody>
-                    </table>
-                    <p id="sub-total">
-                        <strong>Sub Total</strong>: <span id="stotal"></span>
-                    </p>
-                    <ul id="shopping-cart-actions">
-                        <li>
-                            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-                        </li>
-                        <li>
-                            <input type="submit" name="delete" id="empty-cart" class="btn" value="Eliminar productos" />
-                        </li>
-                        <li>
-                            <a href="index.html" class="btn">Continuar comprando</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html" class="btn">Terminar compra</a>
-                        </li>
-                    </ul>
-                </form>
+        <!-- end header section -->
+        <!-- slider section -->
+        <!-- ======= Menu Section ======= -->
+        <form id="formulario">
+            <div >
+                <h4 name="nombreProducto" value="Bandeja Paisa" onclick="clickNombre(this)"> Bandeja paisa</h4>
+                <img src="images/bandeja Paisa.jpg" width="120px">
+                <p name="precio" value="20000" onclick="clickPrecio(this)">Costo : $20000</p>
+                <label for="cantidad"></label> <input type="number" onclick="clickCantidad(this)">
+                <button class="btn btn-outline-dark agregar-carrito" type="submit">Agregar al carrito</button>
+
             </div>
-            
-            
-        
-        </div>
+        </form>
 
         </section><!-- End Menu Section -->
         <hr class="featurette-divider ">
@@ -320,9 +268,14 @@
         </section>
         <!-- footer section -->
 
-      
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/carrito.js"></script>
+        <script type="text/javascript" src="js/pedido.js"></script>
 
-      
 
 </body>
 

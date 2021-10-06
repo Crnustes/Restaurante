@@ -20,6 +20,13 @@ function sendMail(params) {
 
 }
 
+$(document).ready(function() {
+
+    $("#formulario").on("submit", function(event){
+        event.preventDefault();
+        window.location.replace("compra.html");
+    });
+})
 function sendReservas(params) {
     var tempParams1 = {
         from_name: document.getElementById("toNameR").value,
@@ -38,3 +45,14 @@ function sendReservas(params) {
     alert("Su reserva a sido enviada");
 
 }
+
+function clickNombre(nombre){
+    localStorage.setItem("nombre", nombre.value);
+}
+function clickPrecio(precio){
+    localStorage.setItem("precio", precio.value);
+}
+function clickCantidad(cantidad){
+    localStorage.setItem("cantidad", cantidad.value);
+}
+
