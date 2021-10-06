@@ -97,23 +97,23 @@
             <div class="contact_form-container">
               <div>
                 <div>
-                  <input type="text" minlength="10" maxlength="30" placeholder="Nombre completo" required>
+                  <input type="text" id="toName" minlength="10" maxlength="30" placeholder="Nombre completo" required>
                 </div>
                 <div>
-                  <input type="text" maxlength="10" required pattern="[0-9]" placeholder="Número de contacto">
+                  <input type="text" id="toNumber" maxlength="10" required pattern="[0-9]" placeholder="Número de contacto">
                 </div>
                 <div>
-                  <input type="email" required placeholder="Correo electronico">
+                  <input type="email" id="toEmail" required placeholder="Correo electronico">
                 </div>
 
                 <div class="mt-5">
-                  <input type="text" required placeholder="Asunto">
+                  <input type="text" id="toAsunto" required placeholder="Asunto">
                 </div>
                 <br>
                 <br>
                 <div>
                     <label for="servicios">Servicios:</label>
-                    <select name="servicios">
+                    <select name="servicios" id="toService">
                         <option value="value1">Celebracion de cumpleaños</option>
                         <option value="value2">Aniversarios</option>
                          <option value="value2">Fiestas Infantiles</option>
@@ -124,7 +124,7 @@
                 </div> 
                 <br>
                 <br>
-                <textarea name="coments" rows="10" cols="50" placeholder="Comentarios y/o solicitudes especiales" required></textarea>
+                <textarea name="coments" id="toComent" rows="10" cols="50" placeholder="Comentarios y/o solicitudes especiales" required></textarea>
                 <br>
                 <br>
                 <div class="checkbox">
