@@ -29,14 +29,15 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style2.css">
 
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/carrito.js"></script>
-    <script type="text/javascript" src="js/pedido.js"></script>
+    <script src="https://code.jquery.com/query-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             let nombre = localStorage.getItem("nombre");
             let precio = localStorage.getItem("precio");
             let cantidad = localStorage.getItem("cantidad");
@@ -112,9 +113,7 @@
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr id="datos"></tr>
-                                            </tbody>
+
                                         </table>
 
                                         <a href="#" id="vaciar-carrito" class="btn btn-dark btn-block">Vaciar
@@ -129,25 +128,24 @@
                 </nav>
             </div>
         </header>
-      
+
         <div id="site">
-           
+
             <div id="content">
                 <h1>Carrito de compras</h1>
                 <form id="shopping-cart" action="cart.html" method="post">
                     <table class="shopping-cart">
-                      <thead>
-                        <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col" colspan="2">Precio</th>
-                        </tr>
-                      </thead>
-                      <tbody>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col" colspan="2">Precio</th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr id="datos"></tr>
                         </tbody>
-                      </tbody>
+
                     </table>
                     <p id="sub-total">
                         <strong>Sub Total</strong>: <span id="stotal"></span>
@@ -168,9 +166,9 @@
                     </ul>
                 </form>
             </div>
-            
-            
-        
+
+
+
         </div>
 
         </section><!-- End Menu Section -->
@@ -320,9 +318,9 @@
         </section>
         <!-- footer section -->
 
-      
 
-      
+
+
 
 </body>
 
