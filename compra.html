@@ -32,22 +32,8 @@
 
 
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script src="https://code.jquery.com/query-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(document).ready(function () {
-            let nombre = localStorage.getItem("nombre");
-            let precio = localStorage.getItem("precio");
-            let cantidad = localStorage.getItem("cantidad");
-
-            $("#datos").append("<td>" + nombre + "</td>")
-            $("#datos").append("<td>" + precio + "</td>")
-            $("#datos").append("<td>" + cantidad + "</td>")
-
-        });
-    </script>
+    
+    
 
 </head>
 
@@ -128,49 +114,54 @@
                 </nav>
             </div>
         </header>
-
+        <!--##############################################3tabla de carrito######################################################3333-->
         <div id="site">
 
-            <div id="content">
+            <div id="content" class="carrito">
                 <h1>Carrito de compras</h1>
-                <form id="shopping-cart" action="cart.html" method="post">
-                    <table class="shopping-cart">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col" colspan="2">Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="datos"></tr>
-                        </tbody>
 
-                    </table>
-                    <p id="sub-total">
-                        <strong>Sub Total</strong>: <span id="stotal"></span>
-                    </p>
-                    <ul id="shopping-cart-actions">
-                        <li>
-                            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-                        </li>
-                        <li>
-                            <input type="submit" name="delete" id="empty-cart" class="btn" value="Eliminar productos" />
-                        </li>
-                        <li>
-                            <a href="index.html" class="btn">Continuar comprando</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html" class="btn">Terminar compra</a>
-                        </li>
-                    </ul>
+                <table class="shopping-cart">
+                    <thead>
+                        <tr class="">
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+
+                </table>
+                <br>
+                <div class="row mx-4">
+                    <div class="col">
+                        <h3 class="itemCartTotal"> Total: 0</h3>
+
+                    </div>
+                </div>
+                <p id="sub-total">
+                    <strong>Sub Total</strong>: <span id="stotal"></span>
+                </p>
+                <ul id="shopping-cart-actions">
+                    <li>
+                        <input type="submit" name="delete" id="empty-cart" class="btn" value="Eliminar productos" />
+                    </li>
+                    <li>
+                        <a href="menu2.html" class="btn">Continuar comprando</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html" class="btn">Terminar compra</a>
+                    </li>
+                </ul>
                 </form>
             </div>
 
 
 
         </div>
-
+        <!--##############################################3tabla de carrito######################################################3333-->
         </section><!-- End Menu Section -->
         <hr class="featurette-divider ">
         <section class="info_section layout_padding">
@@ -319,8 +310,19 @@
         <!-- footer section -->
 
 
-
-
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"
+      ></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./js/scripts.js"></script>
+      <script src="./js/cart.js"></script>
 
 </body>
 
