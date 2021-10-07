@@ -1,13 +1,11 @@
-body{
-  background-color: white;
-}
+
 header, .alert{
   z-index: 100;
 }
 .description{
   height: 25px;
   overflow: hidden;
-  transition: height .3s ease-in .3s;
+  transition: height .1s ease-in .1s;
 }
 .description:hover{
   height: 80px;

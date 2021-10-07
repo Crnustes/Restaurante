@@ -31,56 +31,66 @@
 </head>
 
 <body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/icono.png" alt="" /><span>
-              D'GUSTO
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <!-----------------------------------------------------------------Header-------------------------------------------------------------------------->
+  <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/icono.png" alt="" /><span>
+            D'GUSTO
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Nosotros.html"> Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menú</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Servicios </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contáctenos</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-            <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
-              <a href="reservas.html">
-                Reservar
-              </a>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html"> Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"> Servicios </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contáctenos</a>
+              </li>
+
+            </ul>
+            <ul class="nav navbar-nav mb-3 py-3 container" id="pills-tab" role="tablist" style="padding-top: 2rem !important;">
+              <li class="nav-item" role="presentation">
+                <a href="tienda.html" class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tienda</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="tienda.html/" class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+              </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+            </form>
           </div>
-        </nav>
-      </div>
-    </header>
+          <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
+            <a href="reservas.html">
+              Reservar
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+<!----------------------------------------------------------------- fin de Header-------------------------------------------------------------------------->
+  
     <!-- end header section -->
     <!-- slider section -->
-    <section class=" slider_section position-relative">
+    <section class=" slider_section position-relative" style="margin-bottom: 120px;">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -453,57 +463,6 @@ Muy buen atendimiento, nos dejaron reservar unas horas antes mientras dábamos u
 
   <!-- end client section -->
 
-  <!-- contact section -->
-
-  <!--
-  <section class="contact_section layout_padding">
-    <div class="container">
-      <h2 class="font-weight-bold">
-        Contáctanos
-      </h2>
-      <div class="row">
-        <div class="col-md-8 mr-auto">
-          <form action="">
-            <div class="contact_form-container">
-              <div>
-                <div>
-                  <input type="text" placeholder="Nombres">
-                </div>
-                <div>
-                  <input type="text" placeholder="Numero de Telefono">
-                </div>
-                <div>
-                  <input type="email" placeholder="Email">
-                </div>
-
-                <div class="mt-5">
-                  <input type="text" placeholder="Mensaje">
-                </div>
-                <div class="mt-5">
-                  <button type="submit">
-                    Enviar
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
--->
-  <!-- end contact section -->
-
-
-  <!-- map section 
-  <section class="map_section">
-    <div id="map" class="h-100 w-100 ">
-    </div>
-  </section>
-
-   end map section -->
    <div class="container">
        <div class="row">
            <div class="col-md-12">
@@ -662,33 +621,8 @@ Muy buen atendimiento, nos dejaron reservar unas horas antes mientras dábamos u
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
-  <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-      });
-
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
-    }
-  </script>
   <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-  </script>
+  
   <!-- end google map js -->
 </body>
 

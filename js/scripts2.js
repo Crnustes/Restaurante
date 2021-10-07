@@ -13,15 +13,17 @@ function addToCarritoItem(e){
   const itemTitle = item.querySelector('.card-title').textContent;
   const itemPrice = item.querySelector('.precio').textContent;
   const itemImg = item.querySelector('.card-img-top').src;
+  const itemCant = item.querySelector('.qty').value;
   
   const newItem = {
     title: itemTitle,
     precio: itemPrice,
     img: itemImg,
-    cantidad: 1
+    cantidad: itemCant
   }
 
   addItemCarrito(newItem)
+  alert("Agregaste un nuevo producto")
 }
 
 

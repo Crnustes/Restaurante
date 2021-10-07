@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#bla" />
-  <title>vanilla Javascript</title>
+  <title>Menú restaurante</title>
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="css/styles3.css" />
 </head>
+<!-----------------------------------------------------------------Header-------------------------------------------------------------------------->
 
 <body>
   <header class="header_section">
@@ -60,7 +61,8 @@
               </li>
 
             </ul>
-            <ul class="nav navbar-nav mb-3 py-3 container" id="pills-tab" role="tablist" style="padding-top: 2rem !important;">
+            <ul class="nav navbar-nav mb-3 py-3 container" id="pills-tab" role="tablist"
+              style="padding-top: 2rem !important;">
               <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
                   type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tienda</a>
@@ -83,10 +85,8 @@
         </div>
       </nav>
     </div>
-
-
   </header>
-
+  <!----------------------------------------------------------------- fin de Header-------------------------------------------------------------------------->
   <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
     Producto Añadido al carrito!
   </div>
@@ -105,13 +105,18 @@
       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 1</h5>
+            
             <img src="./img/platillo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -119,13 +124,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 2</h5>
             <img src="./img/platillo2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -133,13 +142,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 3</h5>
             <img src="./img/platillo3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -147,13 +160,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 4</h5>
             <img src="./img/platillo4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+              <label for="qty-1">Cantidad</label>
+              <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+            </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -161,13 +178,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 5</h5>
             <img src="./img/platillo5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -175,13 +196,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 6</h5>
             <img src="./img/platillo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -189,13 +214,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 7</h5>
             <img src="./img/platillo2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -203,13 +232,17 @@
           </div>
         </div>
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 8</h5>
             <img src="./img/platillo3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+              <p class="card-text text-body description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div>
+                <label for="qty-1">Cantidad</label>
+                <input type="text" name="qty-1" id="qty-1" class="qty" value="" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -223,9 +256,9 @@
     </div>
     <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
       <br>
-      <table class="table table-dark table-hover">
+      <table class="table  table-hover">
         <thead>
-          <tr class="text-primary">
+          <tr class="text-dark">
             <th scope="col">#</th>
             <th scope="col">Productos</th>
             <th scope="col">Precio</th>
@@ -241,152 +274,152 @@
       <br><br>
       <div class="row mx-4">
         <div class="col">
-          <h3 class="itemCartTotal text-white">Total: 0</h3>
+          <h3 class="itemCartTotal">Total: 0</h3>
         </div>
         <div class="col d-flex justify-content-end">
-          <button class="btn btn-success">COMPRAR</button>
+          <button class="btn custom_dark-btn">COMPRAR</button>
         </div>
       </div>
 
     </div>
   </div>
 
-  <footer class="bg-dark p-3 mt-5">
+  <footer class=" p-3 mt-5">
     <!--Footer-->
-  <section class="info_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3" id="menu-footer">
-          <h5>
-            <a href="menu.html">Menú</a>
-          </h5>
-          <ul>
-            <li>
-              <a href="menu.html">Bandeja Paisa</a>
-            </li>
-            <li>
-              <a href="menu.html">Ajiaco</a>
-            </li>
-            <li>
-              <a href="menu.html">Frito Pastuso</a>
-            </li>
-            <li>
-              <a href="menu.html">Arroz con coco</a>
-            </li>
-            <li>
-              <a href="menu.html">Sancocho</a>
-            </li>
-            <li>
-              <a href="menu.html">Arepas Rellenas </a>
-            </li>
-            <li>
-              <a href="menu.html">Cazuela de Mariscos</a>
-            </li>
-            <li>
-              y mucho más...
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3" id="menu-footer">
-          <h5>
-             <a href="service.html">Servicios</a>
-          </h5>
-          <ul>
-            <li>
-              <a href="service.html">Celebración de Cumpleaños</a>
-            </li>
-            <li>
-              <a href="service.html">Aniversarios</a>
-            </li>
-            <li>
-              <a href="service.html">Fiestas Infantiles</a>
-            </li>
-            <li>
-              <a href="service.html">Declaraciones o propuestas</a>
-            </li>
-            <li>
-              <a href="service.html">Despedidas</a>
-            </li>
-            <li>
-              <a href="service.html">Cena con amigos</a>
-            </li>
-            <li>
-              <a href="service.html">Cena Romantica</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>
-            <a href="contact.html">Contactanos</a>
-          </h5>
-          <ul>
-            <li>
-            Dirección:Calle 35 E 25 
-            </li>
-            <li>
-              Horario de atención: 8:00 a.m - 10:00 p.m.
-            </li>
-            <li>
-              Reservas: 314578920 
-            </li>
-            <li>
-              Email: dgusto@gmail.com
-            </li>
-            <li>
-              
-            </li>
-            <li>
-              
-            </li>
-            <li>
-              
-            </li>
-            <li>
-              
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <div class="social_container">
+    <section class="info_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" id="menu-footer">
             <h5>
-              Redes Sociales
+              <a href="menu.html">Menú</a>
             </h5>
-            <div class="social-box">
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/instagram.png" alt="">
-              </a>
-            </div>
-            <div>
-                <a href="mapa.html">Mapa del sitio</a>
-            </div>
+            <ul>
+              <li>
+                <a href="menu.html">Bandeja Paisa</a>
+              </li>
+              <li>
+                <a href="menu.html">Ajiaco</a>
+              </li>
+              <li>
+                <a href="menu.html">Frito Pastuso</a>
+              </li>
+              <li>
+                <a href="menu.html">Arroz con coco</a>
+              </li>
+              <li>
+                <a href="menu.html">Sancocho</a>
+              </li>
+              <li>
+                <a href="menu.html">Arepas Rellenas </a>
+              </li>
+              <li>
+                <a href="menu.html">Cazuela de Mariscos</a>
+              </li>
+              <li>
+                y mucho más...
+              </li>
+            </ul>
           </div>
-          <div class="subscribe_container">
+          <div class="col-md-3" id="menu-footer">
             <h5>
-              Subscribete Ahora
+              <a href="service.html">Servicios</a>
             </h5>
-            <div class="form_container">
-              <form action="">
-                <input type="email">
-                <button type="submit">
-                  Subscribete
-                </button>
-              </form>
+            <ul>
+              <li>
+                <a href="service.html">Celebración de Cumpleaños</a>
+              </li>
+              <li>
+                <a href="service.html">Aniversarios</a>
+              </li>
+              <li>
+                <a href="service.html">Fiestas Infantiles</a>
+              </li>
+              <li>
+                <a href="service.html">Declaraciones o propuestas</a>
+              </li>
+              <li>
+                <a href="service.html">Despedidas</a>
+              </li>
+              <li>
+                <a href="service.html">Cena con amigos</a>
+              </li>
+              <li>
+                <a href="service.html">Cena Romantica</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>
+              <a href="contact.html">Contactanos</a>
+            </h5>
+            <ul>
+              <li>
+                Dirección:Calle 35 E 25
+              </li>
+              <li>
+                Horario de atención: 8:00 a.m - 10:00 p.m.
+              </li>
+              <li>
+                Reservas: 314578920
+              </li>
+              <li>
+                Email: dgusto@gmail.com
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="social_container">
+              <h5>
+                Redes Sociales
+              </h5>
+              <div class="social-box">
+                <a href="">
+                  <img src="images/fb.png" alt="">
+                </a>
+
+                <a href="">
+                  <img src="images/twitter.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/linkedin.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/instagram.png" alt="">
+                </a>
+              </div>
+              <div>
+                <a href="mapa.html">Mapa del sitio</a>
+              </div>
+            </div>
+            <div class="subscribe_container">
+              <h5>
+                Subscribete Ahora
+              </h5>
+              <div class="form_container">
+                <form action="">
+                  <input type="email">
+                  <button type="submit">
+                    Subscribete
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
