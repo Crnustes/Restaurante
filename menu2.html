@@ -29,6 +29,13 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <script src="https://code.jquery.com/query-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        $(".add-to-cart").click(function(event){
+            console.log("Add to cart");
+        })
+
+    </script>
 
 </head>
 
@@ -84,23 +91,7 @@
                                     <img src="images/carrito.png" class="nav-link dropdown-toggle img-fluid"
                                         height="70px" width="70px" href="#" id="dropdown01" data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false"></img>
-                                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                                        <table id="lista-carrito" class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Imagen</th>
-                                                    <th>Nombre</th>
-                                                    <th>Precio</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody></tbody>
-                                        </table>
-
-                                        <a href="#" id="vaciar-carrito" class="btn btn-dark btn-block">Vaciar
-                                            Carrito</a>
-                                        <a href="#" id="procesar-pedido" class="btn btn-dark btn-block">terminar
-                                            compra</a>
+                                    
                                     </div>
                                 </li>
                             </ul>
@@ -114,10 +105,11 @@
         <!-- ======= Menu Section ======= -->
         <form id="formulario">
             <div >
-                <h4 name="nombreProducto" value="Bandeja Paisa" onclick="clickNombre(this)"> Bandeja paisa</h4>
+                <h4 name="nombreProducto" value="Bandeja Paisa"> Bandeja paisa</h4>
                 <img src="images/bandeja Paisa.jpg" width="120px">
-                <p name="precio" value="20000" onclick="clickPrecio(this)">Costo : $20000</p>
-                <label for="cantidad"></label> <input type="number" onclick="clickCantidad(this)">
+                <p name="precio">Costo : $20000</p>
+                <label for="cantidad"></label> <input type="number">
+                <p> <a href="" class="add-to-cart" data-name="Bandeja Paisa" data-price="20000" >Agregar al carrito</a> </p>
                 <button class="btn btn-outline-dark agregar-carrito" type="submit">Agregar al carrito</button>
 
             </div>
