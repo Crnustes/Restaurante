@@ -107,7 +107,7 @@
         <div class="col d-flex justify-content-center mb-4">
           <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
             <h5 class="card-title pt-2 text-center text-primary">Card title 1</h5>
-            
+
             <img src="./img/platillo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text text-body description">Some quick example text to build on the card title and make
@@ -168,9 +168,9 @@
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
               <div>
-              <label for="qty-1">Cantidad</label>
-              <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
-            </div>
+                <label for="qty-1">Cantidad</label>
+                <input type="number" name="qty-1" id="qty-1" class="qty" value="1" style="width: 50px;" />
+              </div>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -279,9 +279,81 @@
         <div class="col d-flex justify-content-end">
           <button class="btn custom_dark-btn">COMPRAR</button>
         </div>
+        <section class="contact_section layout_padding">
+          <div class="container">
+            <div style="text-align: center; background-color: #ccc; padding: 15px;">
+              <h2 class="font-weight-bold">
+                Realiza tu compra Online
+              </h2>
+              <p>El domicilio se entrega en horario laboral
+              </p>
+              <p><b>Muchas gracias por preferirnos</b></p>
+            </div>
+            <div class="row" style="padding-top: 50px;">
+              <div class="col-md-8 mr-auto">
+
+                <form action="">
+                  <div class="contact_form-container">
+                    <div>
+                      <div>
+                        <input type="text" id="toNameR" minlength="10" maxlength="30" placeholder="Nombre completo"
+                          required>
+                      </div>
+                      <div>
+                        <input type="text" id="toNumberR" placeholder="Número de contacto">
+                      </div>
+                      <div>
+                        <input type="email" id="toEmailR" required placeholder="Correo electronico">
+                      </div>
+                      <div>
+                        <input type="email" id="toCiudadR" required placeholder="Ciudad">
+                      </div>
+                      <div>
+                        <input type="email" id="toBarrioR" required placeholder="Barrio">
+                      </div>
+                      <div>
+                        <input type="email" id="toDirR" required placeholder="Direccion">
+                      </div>
+                      <label>Metodo de pago:</label>
+                      <select id="metodo de pago" >
+                        <option value="Contraentrega">Contraentrega</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="tranferencia">Tranferencia</option>
+
+                      </select>
+                      <br>
+                      <br>
+                      <textarea name="coments" id="toComentR" rows="10" cols="50"
+                        placeholder="Comentarios y/o solicitudes especiales" required></textarea>
+                      <br>
+                      <br>
+                      <div class="checkbox">
+                        <label for="check"><input type="checkbox" id="data" required /> <span>Acepto la
+                            politica de
+                            tratamiento de datos personales</span></label>
+                      </div>
+
+
+                      <div class="mt-5">
+                        <button type="submit" onclick='sendReservas()'>
+                          Enviar
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section>
       </div>
 
     </div>
+
+
   </div>
 
   <footer class=" p-3 mt-5">
