@@ -8,7 +8,7 @@ function sendMail(params) {
         comentario: document.getElementById("toComent").value,
     }
 
-    emailjs.send('service_u3c243x', 'template_63a3xvg', tempParams)
+    emailjs.send('service_u3c243x', 'template_ss9ekej', tempParams)
         .then(function (res) {
             console.log("sucess", res.status);
 
@@ -20,9 +20,9 @@ function sendMail(params) {
 
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $("#formulario").on("submit", function(event){
+    $("#formulario").on("submit", function (event) {
         event.preventDefault();
         window.location.replace("compra.html");
     });
@@ -46,13 +46,26 @@ function sendReservas(params) {
 
 }
 
-function clickNombre(nombre){
-    localStorage.setItem("nombre", nombre.value);
+function sendDomicilio(params) {
+    var tempParams2 = {
+        from_name: document.getElementById("toNameD").value,
+        correo: document.getElementById("toEmailD").value,
+        telefono: document.getElementById("toNumberD").value,
+        comentario: document.getElementById("toComentD").value,
+        ciudad: document.getElementById("toCiudadD").value,
+        barrio: document.getElementById("toBarrioD").value,
+        direccion: document.getElementById("toDirD").value,
+        metodoPago: document.getElementById("metodoPagoD").value,
+        pedido: document.getElementById("toPedidoD").value,
+    }
+
+    emailjs.send('service_u3c243x', 'template_8gt3gxb', tempParams2)
+        .then(function (res) {
+            console.log("sucess", res.status);
+        })
+    alert('Hemos recibido su pedido');
+
 }
-function clickPrecio(precio){
-    localStorage.setItem("precio", precio.value);
-}
-function clickCantidad(cantidad){
-    localStorage.setItem("cantidad", cantidad.value);
-}
+
+
 
