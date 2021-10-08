@@ -42,15 +42,17 @@ function renderCarrito() {
         tr.classList.add('ItemCarrito')
         const Content = `
     
-    <th scope="row">1</th>
+    <th scope="row" id="table__pedido">#</th>
             <td class="table__productos">
               <img src=${item.img}  alt="">
               <h6 class="title">${item.title}</h6>
             </td>
             <td class="table__price"><p>${item.precio}</p></td>
             <td class="table__cantidad">
-              <input type="number" min="1" value=${item.cantidad} class="input__elemento">
-              <button class="delete btn btn-danger">x</button>
+              <input type="number" min="1" value=${item.cantidad} class="input__elemento"><p style="display:none;"> ${item.cantidad} </p>
+            </td>
+            <td>
+                <button class="delete btn btn-danger">-</button>
             </td>
     
     `
@@ -132,7 +134,8 @@ function sendDomicilio(params) {
       barrio: document.getElementById("toBarrioD").value,
       direccion: document.getElementById("toDirD").value,
       metodoPago: document.getElementById("metodoPagoD").value,
-      pedido: document.getElementById ("").value,
+      pedido: document.getElementById ("toPedidoD").textContent,
+      valorTotal: document.getElementById("toTotalD").textContent,
   }
 
   emailjs.send('service_u3c243x', 'template_8gt3gxb', tempParams2)
