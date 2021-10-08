@@ -133,7 +133,7 @@ function sendDomicilio(params) {
         barrio: document.getElementById("toBarrioD").value,
         direccion: document.getElementById("toDirD").value,
         metodoPago: document.getElementById("metodoPagoD").value,
-        pedido: document.getElementById("toPedidoD").textContent,
+        pedido: document.getElementById("toPedidoD").value,
     }
 
     emailjs.send('service_u3c243x', 'template_8gt3gxb', tempParams2)
