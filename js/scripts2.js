@@ -123,24 +123,6 @@ window.onload = function() {
 }
 
 function sendDomicilio(params) {
-    HEAD
-    var tempParams2 = {
-        from_name: document.getElementById("toNameD").value,
-        correo: document.getElementById("toEmailD").value,
-        telefono: document.getElementById("toNumberD").value,
-        comentario: document.getElementById("toComentD").value,
-        ciudad: document.getElementById("toCiudadD").value,
-        barrio: document.getElementById("toBarrioD").value,
-        direccion: document.getElementById("toDirD").value,
-        metodoPago: document.getElementById("metodoPagoD").value,
-        pedido: document.getElementById("toPedidoD").innerHTML,
-    }
-
-    emailjs.send('service_u3c243x', 'template_8gt3gxb', tempParams2)
-        .then(function(res) {
-            console.log("sucess", res.status);
-        })
-    alert('Hemos recibido su pedido');
 
     var tempParams2 = {
         from_name: document.getElementById("toNameD").value,
